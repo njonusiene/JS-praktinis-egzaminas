@@ -35,10 +35,10 @@ var a = parseFloat(prompt("Įveskite pirmą skaičių:"))
 var b = parseFloat(prompt("Įveskite antrą skaičių:"))
 
 if (!isNaN(a) && !isNaN(b)) {
-  var sumResult = calculator.sum(a, b)
-  var sumResult1 = calculator.subtraction(a, b)
-  var sumResult2 = calculator.multiplication(a, b)
-  var sumResult3 = calculator.division(a, b)
+  var sumResult = calculator.sum(a, b).toFixed(2)
+  var sumResult1 = calculator.subtraction(a, b).toFixed(2)
+  var sumResult2 = calculator.multiplication(a, b).toFixed(2)
+  var sumResult3 = calculator.division(a, b).toFixed(2)
 
   var resultsContainer = document.getElementById("results")
   resultsContainer.innerHTML = 
